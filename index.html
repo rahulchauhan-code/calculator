@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Calculator - Fast, Accurate, and Responsive">
+    <title>Calculator - Modern & Responsive</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="display-wrapper">
+            <input type="text" name="text" id="text" class="display" placeholder="0" readonly>
+        </div>
+        <div class="backspace-wrapper">
+            <button class="btn btn-function" onclick="clearone()">⌫</button>
+        </div>
+        <div class="buttons-grid">
+            <button class="btn btn-function" onclick="clearDisplay()">C</button>
+            <button class="btn btn-function" onclick="bkts()">()</button>
+            <button class="btn btn-function" onclick="persentage()">%</button>
+            <button class="btn btn-operator" onclick="division()">/</button>
+
+            <button class="btn btn-number" onclick="seven()">7</button>
+            <button class="btn btn-number" onclick="eight()">8</button>
+            <button class="btn btn-number" onclick="nine()">9</button>
+            <button class="btn btn-operator" onclick="multi()">*</button>
+
+            <button class="btn btn-number" onclick="four()">4</button>
+            <button class="btn btn-number" onclick="five()">5</button>
+            <button class="btn btn-number" onclick="six()">6</button>
+            <button class="btn btn-operator" onclick="sub()">-</button>
+
+            <button class="btn btn-number" onclick="one()">1</button>
+            <button class="btn btn-number" onclick="two()">2</button>
+            <button class="btn btn-number" onclick="three()">3</button>
+            <button class="btn btn-operator" onclick="add()">+</button>
+
+            <button class="btn btn-number btn-zero" onclick="dzero()">00</button>
+            <button class="btn btn-number btn-zero" onclick="zero()">0</button>
+            <button class="btn btn-number" onclick="point()">.</button>
+            <button class="btn btn-equal" onclick="equal()">=</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</html>
