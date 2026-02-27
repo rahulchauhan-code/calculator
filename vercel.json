@@ -1,5 +1,5 @@
 {
-  "buildCommand": "",
-  "outputDirectory": ".",
-  "public": true
+  "routes": [
+    { "src": "/", "dest": "/main.html" }
+  ]
 }
